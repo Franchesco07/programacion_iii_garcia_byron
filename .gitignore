@@ -1,0 +1,140 @@
+==========================================
+
+Dependencies & Package Managers
+
+==========================================
+
+/node_modules/
+/.pnp
+/.pnp.js
+/.yarn/
+!/.yarn/patches
+!/.yarn/plugins
+!/.yarn/releases
+!/.yarn/sdks
+!/.yarn/versions
+
+Package manager logs
+
+*/npm-debug.log
+*/yarn-debug.log
+*/yarn-error.log
+*/lerna-debug.log
+*/pnpm-debug.log
+
+==========================================
+
+Build & Output Directories (NestJS, React, TS)
+
+==========================================
+
+/dist/
+/build/
+/out/
+/.next/
+/.nuxt/
+/.vuepress/dist
+/.serverless/
+/.fusebox/
+/.dynamodb/
+
+TypeScript Cache & Output
+
+/tsconfig.tsbuildinfo
+/*.tsbuildinfo
+
+==========================================
+
+Environment Variables & Secrets
+
+==========================================
+
+/.env
+/.env.local
+/.env.development.local
+*/.env.test.local
+/.env.production.local
+/.env.local
+!/.env.example
+!/.env.template
+
+==========================================
+
+Testing & Coverage
+
+==========================================
+
+/coverage/
+/.nyc_output/
+/.jest/
+/cypress/screenshots/
+/cypress/videos/
+/.playwright/
+
+==========================================
+
+IDEs & Editor Configurations
+
+==========================================
+
+Visual Studio Code
+
+/.vscode/
+!/.vscode/extensions.json
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!*/.vscode/launch.json
+
+JetBrains (WebStorm, IntelliJ)
+
+/.idea/
+/.iw
+/.iws
+
+OS Generated Files
+
+/.DS_Store
+/.DS_Store?
+*/._
+/.Spotlight-V100
+/.Trashes
+/ehthumbs.db
+/Thumbs.db
+
+==========================================
+
+Logs, Cache & Temporary Files
+
+==========================================
+
+/logs/
+/*.log
+/.cache/
+/.eslintcache
+/.stylelintcache
+/.prettiercache
+/.parcel-cache/
+/.swc/
+/.turbo/
+
+==========================================
+
+NestJS Specific
+
+==========================================
+
+NestJS CLI build outputs
+
+/dist/
+/*.js.map
+
+==========================================
+
+Miscellaneous
+
+==========================================
+
+/.pid
+/.seed
+/*.pid.lock
+/pids
