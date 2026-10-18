@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Biblioteca</title>
+</head>
+<body>
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"></td>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Ingrese su password"></td>
+                <td><label for="password_confirm">Confirmar Password:</label></td>
+                <td><input type="password" id="password_confirm" name="password_confirm" placeholder="Confirme su password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Seleccionar Genero</p>
+                    <input type="radio" id="terror" name="genero" value="genero1">
+                    <label for="terror">Terror</label>
+                    <input type="radio" id="romance" name="genero" value="genero2">
+                    <lable for="romance">Romance</lable>
+                    <input type="radio" id="suspenso" name="genero" value="genero3">
+                    <label for="suspenso">Suspenso</label>
+                </td>
+                <td>
+                    <p>Seleccione el año</p>
+                    <input type="checkbox" id="1950-1960" name="año" value="1950-1960">
+                    <label for="1950-1960">1950-1960</label>
+                    <input type="checkbox" id="2000-2010" name="año" value="2000-2010">
+                    <label for="2000-2010">2000-2010</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="autor">Autor</label>
+                    <select id="autor" name="autor" required>
+                        <option value="">Seleccione el autor</option>
+                        <option value="">Gabriel Garcia</option>
+                        <option value="">Miguel de Cervantes</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <fieldset>
+                    <legend>Observaciones</legend>
+                    <label for="interesantes">INtererantes</label>
+                    <input type="text" id="interesantes" name="interantes">
+                    <br>
+                    <label for="reseñas">Reseñas</label>
+                    <input type="text" id="reseñas" name="reseñas">
+                </fieldset>
+            </td>
+            </tr>
+        </table>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reiniciar</button>
+
+    </form>
+</body>
+</html>

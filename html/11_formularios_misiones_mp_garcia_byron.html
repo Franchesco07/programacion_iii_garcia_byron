@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Control de Biblioteca</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Control de Biblioteca</h1>
+        <p>Gestión de Préstamos y Ejemplares</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="control-biblioteca">
+
+            <fieldset>
+                <legend>Información del préstamo</legend>
+
+                <label for="codigo">
+                    Código del libro:
+                </label>
+
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="LIB-001"
+                       maxlength="10"
+                       required>
+
+                <br><br>
+
+                <label for="usuario">
+                    Lector / Usuario:
+                </label>
+
+                <select id="usuario"
+                        name="usuario"
+                        required>
+
+                    <option value="">
+                        Selecciona un usuario
+                    </option>
+
+                    <option value="ana">
+                        Ana Gómez
+                    </option>
+
+                    <option value="carlos">
+                        Carlos Pérez
+                    </option>
+
+                    <option value="lucia">
+                        Lucía Torres
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label for="seccion">
+                    Sección de la biblioteca:
+                </label>
+
+                <input type="text"
+                       id="seccion"
+                       name="seccion"
+                       placeholder="Ej. Sala General"
+                       required>
+
+                <br><br>
+
+                <label for="fecha">
+                    Fecha de devolución:
+                </label>
+
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Detalles del préstamo</legend>
+
+                <p>Tipo de material:</p>
+
+                <input type="radio"
+                       id="libro"
+                       name="material"
+                       value="libro"
+                       required>
+
+                <label for="libro">Libro</label>
+
+                <input type="radio"
+                       id="revista"
+                       name="material"
+                       value="revista">
+
+                <label for="revista">Revista</label>
+
+                <input type="radio"
+                       id="tesis"
+                       name="material"
+                       value="tesis">
+
+                <label for="tesis">Tesis</label>
+
+                <br><br>
+
+                <label for="dias">
+                    Días de préstamo (1 a 30):
+                </label>
+
+                <input type="number"
+                       id="dias"
+                       name="dias"
+                       min="1"
+                       max="30"
+                       value="7">
+
+                <p>Servicios adicionales:</p>
+
+                <input type="checkbox"
+                       id="marcapaginas"
+                       name="servicios"
+                       value="marcapaginas">
+
+                <label for="marcapaginas">
+                    Marcapáginas institucional
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="funda"
+                       name="servicios"
+                       value="funda">
+
+                <label for="funda">
+                    Funda protectora
+                </label>
+                <br>
+
+                <input type="checkbox"
+                       id="digital"
+                       name="servicios"
+                       value="digital">
+
+                <label for="digital">
+                    Versión digital incluida
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Observaciones del ejemplar</legend>
+
+                <label for="descripcion">
+                    Estado físico y comentarios:
+                </label>
+
+                <br>
+
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe el estado del libro..."
+                          required></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">
+                Registrar préstamo
+            </button>
+
+            <button type="reset">
+                Limpiar datos
+            </button>
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <small>
+                Biblioteca Central - 2026
+            </small>
+        </p>
+    </footer>
+
+</body>
+</html>
