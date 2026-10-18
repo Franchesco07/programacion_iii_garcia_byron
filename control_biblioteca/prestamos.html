@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos - Control de Biblioteca</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jfif" alt="Logo" width="50">
+        <h1>Biblioteca</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="prestamos.html">Préstamos</a>
+            <a href="multimedia.html">Multimedia</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Control de Prestamos</h2>
+        <h3>Registrar Nuevo Prestamos</h3>
+        <form>
+            <label>ID del Usuario:</label>
+            <input type="text" placeholder="Lib-01"><br><br>
+            <label>Titulo del libro</label>
+            <input type="text" placeholder="ej. Cien años de soledad"><br><br>
+            <label>Fecha de Prestamo:</label>
+            <input type="date"><br><br>
+            <button type="submit">Realizar Prestamo</button>
+        </form>
+        <hr>
+        <h3>Lista de Usuarios Registrados</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carlos Gómez</td>
+                    <td>carlos@email.com</td>
+                    <td>Estudiante</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>María López</td>
+                    <td>maria@email.com</td>
+                    <td>Profesor</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>

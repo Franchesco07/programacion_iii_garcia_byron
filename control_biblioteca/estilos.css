@@ -1,0 +1,151 @@
+/* index */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+/*Usuarios*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ddd;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/*Prestamos*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ddd;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+/*Multimedios*/
+
+figure {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 10px 15px 0;
+    display: inline-block;
+    max-width: 320px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
+    text-align: center;
+}
+
+audio, video {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+video {
+    background-color: #000;
+    border-radius: 5px;
+}
