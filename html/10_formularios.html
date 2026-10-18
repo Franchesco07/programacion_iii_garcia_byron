@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"></td>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Ingrese su password"></td>
+                <td><label for="password_confirm">Confirmar Password:</label></td>
+                <td><input type="password" id="password_confirm" name="password_confirm" placeholder="Confirme su password"></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" id="edad" name="edad" placeholder="Ingrese su edad"></td>
+                <td>
+                    <label for="nivel">Nivel de fuerza</label><br>
+                    <input type="number" id="nivel" name="nivel" min="10" max="100" value="50" step="5">
+                </td>
+                <td>
+                    <p>Seleccionar tu bando</p>
+                    <input type="radio" id="jedi" name="bando" value="bando1">
+                    <label for="jedi">Jedi</label>
+                    <input type="radio" id="sith" name="bando" value="bando2">
+                    <label for="sith">Sith</label>
+                </td>
+                <td>
+                    <p>Seleccione tus habilidades</p><br>
+                    <input
+                    type="checkbox"
+                    id="sable"
+                    name="habilidades"
+                    value="sable"
+                    >
+                    <label for="sable">uso de sable de luz</label><br>
+                    <input
+                    type="checkbox"
+                    id="levitar"
+                    name="habilidades"
+                    value="levitar"
+                >
+                <label for="levitar">levitación</label>
+                </td>   
+            </tr>   
+            <tr>
+                <td>
+                    <label for="planeta">Planeta de Origen</label>
+                    <select id="planeta" name="planeta" required>
+                        <option value="">Seleccione un pleneta</option>
+                        <option value="Tatooine">Tatooine</option>
+                        <option value="Alderaan">Alderaan</option>
+                        <option value="Naboo">Naboo</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="droide">Droide</label>
+                    <select id="droide" name="droide" multiple size="2">
+                        <option value="">Seleccione un droide</option>
+                        <option value="R2D2">R2D2</option>
+                        <option value="C3PO">C3PO</option>
+                        <option value="IG88">IG88</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <fieldset>
+                    <legend>Datos Generales</legend>
+                    <label for="misiones">Misiones:</label>
+                    <input type="text" id="misiones" name="misiones">
+                    <br>
+                    <label for="vuelos">vuelos</label> 
+                    <input type="number" id="vuelos" name="vuelos">
+                </fieldset>
+            </td>    
+            </tr>
+                
+        </table>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+</body>
+</html>
