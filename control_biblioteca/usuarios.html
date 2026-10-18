@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jfif" alt="Logo" width="50">
+        <h1>Biblioteca</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="prestamos.html">Préstamos</a>
+            <a href="multimedia.html">Multimedia</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Gestion de Usuarios</h2>
+        <h3>Registro nuevo usario</h3>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Franchesco García"><br><br>
+            <label>Correo electronico</label>
+            <input type="email" placeholder="ejemplo@hotmail.com"><br><br>
+            <label>Tipo de usuario:</label>
+            <select>
+                <option>Estudiante</option>
+                <option>Profesor</option>
+            </select><br><br>
+            <button type="submit">Guardar Usuario</button>
+        </form>
+        <hr>
+        <h3>Lista de Usuarios Registrados</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carlos Gómez</td>
+                    <td>carlos@email.com</td>
+                    <td>Estudiante</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>María López</td>
+                    <td>maria@email.com</td>
+                    <td>Profesor</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
