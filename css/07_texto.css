@@ -1,0 +1,96 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto-jedi {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-imperio {
+    font-family: 'Courier new', Courier, monospace;
+}
+
+.texto-40px {
+    font-size : 40px;
+}
+
+.texto-20px {
+    font-size: 20px;
+}
+
+.texto-10px {
+    font-size: 10px;
+}
+
+.aprendiz {
+    font-weight: 300;
+}
+
+.caballero {
+    font-weight: 500;
+}
+
+.maestro {
+    font-weight: 800;
+}
+
+.estilo-letra-normal {
+    font-style: normal;
+}
+
+.estilo-letra-italica {
+    font-style: italic;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.centro {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.importante {
+    text-decoration: underline;
+    text-decoration-line: gold;
+    text-decoration-line: solid;
+    text-decoration-thickness: 3px;
+}
+
+.cancelado {
+    text-decoration: line-through;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.titulo_mayusculas {
+    text-transform: uppercase;
+}
+
+.titulo-minusculas {
+    text-transform: lowercase;
+}
+
+.titulo_capatalizado {
+    text-transform: capitalize;
+}
+
+.espaciado-simple {
+    line-height: 1;
+}
+
+.espaciado-doble {
+    line-height: 2;
+}
+.espacio_letras1 {
+    letter-spacing: 4px;
+}
+.espacio_letras2 {
+    letter-spacing: 1px;
+}

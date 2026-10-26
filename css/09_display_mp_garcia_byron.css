@@ -1,0 +1,18 @@
+.libro {
+    display: block;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.l1 {
+    background-color: #2653EB;
+}
+
+.l2 {
+    background-color: #15803D;
+}
+
+.l3 {
+    background-color: #991B1B;
+}
