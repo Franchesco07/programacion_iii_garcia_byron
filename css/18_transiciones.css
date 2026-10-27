@@ -1,0 +1,160 @@
+body {
+    background-color: #0b1020;
+    color: white;
+    font-family: center;
+    padding: 50px;
+    text-align: center;
+
+}
+
+h1 {
+    color: #facc15;
+}
+
+.boton-jedi {
+    padding: 15px 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.boton-jedi:hover{
+    background-color: #16A34A;
+}
+
+.boton-jedi:focus-visible {
+    background-color: #16A34A;
+    outline: 3px solid #facc15;
+    outline-offset: 4px;
+}
+
+.tarjeta{
+    width: 250px;
+    padding: 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 2s ease;
+    transition-property: background-color, transform;
+    transition: background-color 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta:hover {
+    background-color: #16A34A;
+    transform: scale(1.5);
+}
+
+.hangar {
+    padding: 30px;
+    background-color: #172033;
+
+}
+.nave{
+    width: 100px;
+    padding: 20px;
+    background-color: #2563eb;
+    transition: transform0.5s ease ;   
+    /*
+    ease: comienza lento acelera y vuelve a lento al final
+    linear: velocidad constante
+    ease-in: empieza lento y termina rápido al final
+    ease-in-out: empieza lento, rápido en el centro, temrnia lento, simetricamente marcado
+    ease-out: empieza rápido y termina lento
+    cubic-bezier(0,0,0,0): curva de aceleración segun puntos
+      */
+}
+
+.nave:hover {
+    transform: translate(-50px, -10px);
+}
+
+.radar {
+    padding: 30px;
+    display:grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #172033;
+    border-color: #22C55E;
+    border: 3px solid #16A34A;
+    border-radius: 50%;
+}
+
+.indicador {
+    color:#22C55E;
+    font-size:  70px;
+    transition: transform 1s ease;
+}
+
+.indicador:hover {
+    transform: rotate(90deg);
+}
+
+.nave2{
+    width: 100px;
+    padding: 20px;
+    background-color: #2563eb;
+    transition: transform0.5s ease ;   
+}
+
+.nave2:hover {
+    transform: translateX(50px) rotate(15deg) scale(4);
+}
+
+.espacio {
+    width: 100;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #172033;
+    overflow: hidden;
+}
+
+.xwing {
+    width: 100px;
+    background-color: #2563eb;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translateX(2000px);
+    }
+}
+
+.alerta {
+    width: 220px;
+    padding: 20px;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    animation-name: advertencia;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes advertencia {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
