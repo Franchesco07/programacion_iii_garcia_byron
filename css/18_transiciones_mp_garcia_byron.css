@@ -1,0 +1,177 @@
+body {
+    background-color: #0F172A; /* Fondo nocturno de biblioteca */
+    color: #E2E8F0;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #F59E0B; /* Tono dorado/ámbar académico */
+}
+
+/* Botón de solicitud de préstamo */
+.boton-jedi {
+    padding: 15px 25px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.boton-jedi:hover {
+    background-color: #059669; /* Verde esmeralda institucional */
+}
+
+.boton-jedi:focus-visible {
+    background-color: #059669;
+    outline: 3px solid #F59E0B;
+    outline-offset: 4px;
+}
+
+/* Tarjeta de libro */
+.tarjeta {
+    width: 250px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #1E293B;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.tarjeta:hover {
+    background-color: #059669;
+    transform: scale(1.1); /* Escala ajustada para mejor legibilidad */
+}
+
+/* Zona de consulta */
+.hangar {
+    padding: 30px;
+    background-color: #1E293B;
+    border-radius: 10px;
+}
+
+.nave {
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2563EB;
+    border-radius: 6px;
+    transition: transform 0.5s ease;   
+    /*
+    ease: comienza lento, acelera y vuelve a lento al final
+    linear: velocidad constante
+    ease-in: empieza lento y termina rápido al final
+    ease-in-out: empieza lento, rápido en el centro, termina lento (simétrico)
+    ease-out: empieza rápido y termina lento
+    cubic-bezier(a,b,c,d): curva de aceleración según puntos de control
+    */
+}
+
+.nave:hover {
+    transform: translate(-50px, -10px);
+}
+
+/* Radar de préstamos */
+.radar {
+    padding: 30px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #1E293B;
+    border: 3px solid #10B981;
+    border-radius: 50%;
+}
+
+.indicador {
+    color: #10B981;
+    font-size: 70px;
+    transition: transform 1s ease;
+}
+
+.indicador:hover {
+    transform: rotate(90deg);
+}
+
+/* Segunda sala / elemento */
+.nave2 {
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2563EB;
+    border-radius: 6px;
+    transition: transform 0.5s ease;   
+}
+
+.nave2:hover {
+    transform: translateX(50px) rotate(15deg) scale(1.5);
+}
+
+/* Proceso de búsqueda de libros */
+.espacio {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1E293B;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.xwing {
+    width: 100px;
+    padding: 10px;
+    background-color: #2563EB;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+/* Alerta de devolución / sistema */
+.alerta {
+    width: 220px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #DC2626; /* Rojo de advertencia bibliográfica */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    animation-name: advertencia;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes advertencia {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

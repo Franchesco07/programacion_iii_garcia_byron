@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #0F172A; /* Fondo nocturno institucional */
+    color: #E2E8F0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Mobile First */
+
+
+/* Encabezado */
+
+
+.encabezado {
+    padding: 2rem 1rem;
+    background-color: #1E293B;
+    text-align: center;
+    border-bottom: 3px solid #F59E0B; /* Ámbar/Dorado clásico de biblioteca */
+}
+
+
+.encabezado h1 {
+    font-size: 2rem;
+    color: #F59E0B;
+}
+
+
+/* Menú móvil */
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 1rem;
+    background-color: #1A2234;
+}
+
+
+.menu a {
+    color: #F59E0B;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+/* Distribución móvil */
+
+
+.distribucion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+
+    width: 92%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+
+/* Contenido principal */
+
+
+.principal {
+    min-width: 0;
+    padding: 1.25rem;
+    background-color: #1E293B;
+    border-radius: 12px;
+}
+
+
+h2 {
+    color: #60A5FA; /* Azul académico para secciones */
+}
+
+
+/* Préstamos / Tarjetas: una columna */
+
+
+.misiones {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+
+.mision {
+    padding: 1.25rem;
+    background-color: #273548; /* Fondo de tarjetas de préstamo */
+    border: 1px solid #475569;
+    border-radius: 10px;
+}
+
+
+.mision h3 {
+    color: #F59E0B;
+}
+
+
+/* Personal / Equipo */
+
+
+#escuadron {
+    margin-top: 2rem;
+}
+
+
+.escuadron {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+
+.piloto {
+    padding: 1.25rem;
+    background-color: #273548;
+    border: 2px solid #10B981; /* Verde esmeralda para destacar el personal activo */
+    border-radius: 10px;
+}
+
+
+.piloto h3 {
+    color: #F59E0B;
+}
+
+
+/* Panel lateral (Inventario / Recursos) */
+
+
+.lateral {
+    min-width: 0;
+    padding: 1.5rem;
+    background-color: #273548;
+    border-left: 4px solid #F59E0B;
+    border-radius: 10px;
+}
+
+
+.lateral ul {
+    padding-left: 1.5rem;
+}
+
+
+.estado {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #059669; /* Verde institucional para estado activo */
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* Pie de página */
+
+
+footer {
+    padding: 1.5rem;
+    background-color: #1E293B;
+    text-align: center;
+}
+
+
+footer a {
+    color: #F59E0B;
+}
+
+
+/* Tabletas: desde 600px */
+
+
+@media (min-width: 600px) {
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .misiones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .escuadron {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Computadoras: desde 1000px */
+
+
+@media (min-width: 1000px) {
+
+    .encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .distribucion {
+        grid-template-columns:
+            minmax(0, 3fr) minmax(240px, 1fr);
+    }
+
+    .principal {
+        padding: 2rem;
+    }
+
+    .misiones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .escuadron {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
