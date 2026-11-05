@@ -77,3 +77,31 @@ console.log(`7 X 5 = ${5*7}`);
 console.log(`8 X 5 = ${5*8}`);
 console.log(`9 X 5 = ${5*9}`);
 console.log(`10 X 5 = ${5*10}`);
+
+console.log("Tabla de División del 5:");
+console.log(`5 / 1 = ${5/1}`);
+console.log(`5 / 2 = ${5/2}`);
+console.log(`5 / 3 = ${5/3}`);               
+console.log(`5 / 4 = ${5/4}`);
+console.log(`5 / 5 = ${5/5}`);
+console.log(`5 / 6 = ${5/6}`);
+console.log(`5 / 7 = ${5/7}`);
+console.log(`5 / 8 = ${5/8}`);
+console.log(`5 / 9 = ${5/9}`);
+console.log(`5 / 10 = ${5/10}`);   
+
+console.log("Tabla de Multiplicar del 5:");
+console.log(`1 X ${5} = ${5*1}`);
+console.log(`2 X ${5} = ${5*2}`);
+console.log(`3 X ${5} = ${5*3}`);
+console.log(`4 X ${5} = ${5*4}`);
+console.log(`5 X ${5} = ${5*5}`);
+console.log(`6 X ${5} = ${5*6}`);
+console.log(`7 X ${5} = ${5*7}`);
+console.log(`8 X ${5} = ${5*8}`);
+console.log(`9 X ${5} = ${5*9}`);
+console.log(`10 X ${5} = ${5*10}`);
+
+
+
+
