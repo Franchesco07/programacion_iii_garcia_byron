@@ -104,3 +104,38 @@ for (let propiedad in nave) {
         }
     }
 }
+let misiones = [ 
+    { nombre: "Misión 1", cristales: 50, meta: 100, persoanje: "Rick" },
+    { nombre: "Misión 2", cristales: 30, meta: 80, persoanje: "Morty" },
+    { nombre: "Misión 3", cristales: 70, meta: 90, persoanje: "Summer" }
+];
+
+let exitosas = 0;
+for (let mision of misiones) {
+    let porcentaje = (mision.cristales / mision.meta) * 100;
+    console.log(mision.nombre + " - " + mision.persoanje + ": " + porcentaje.toFixed(2) + "% de cristales recolectados");
+    if (porcentaje >= 90) {
+        exitosas++;
+    }else {
+        console.log(mision.nombre + " - " + mision.persoanje + ": No se alcanzó la meta de cristales");
+    }
+}
+console.log("Número de misiones exitosas: " + exitosas);
+
+console.log("---------------_");
+console.log ("Uso de break y continue");
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        console.log("Se encontró el número 5, se detiene el ciclo");
+        break;
+    }
+    console.log("Número: " + i);
+}
+
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        console.log("Se encontró el número 5, se omite esta iteración");
+        continue;
+    }
+    console.log("Número: " + i);
+}       
