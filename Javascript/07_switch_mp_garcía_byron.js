@@ -1,53 +1,53 @@
 let dimension = 4;
 switch (dimension) {
     case 1:
-        console.log("Estás en la dimensión C-137.");
+        console.log("Estás en la sección de Ficción.");
         break;
     case 2:
-        console.log("Estás en la dimensión C-500.");
+        console.log("Estás en la sección de Terror.");
         break;
     case 3:
-        console.log("Estás en la dimensión C-300.");
+        console.log("Estás en la sección de Ciencia.");
         break;
     case 4:
-        console.log("Estás en la dimensión Byron García.");
+        console.log("Estás en la sección de Historia.");
         break;
     default:
-        console.log("No reconocemos esta dimensión, ¡ten cuidado!");
+        console.log("No reconocemos esta sección, ¡ten cuidado!");
 }       
 
-let personaje = "Rick";
+let personaje = "Bibliotecario";
 switch (personaje) {
-    case "Rick":
-    case "Morty":
-        console.log("¡Hola Rick y Morty! ¿Preparado para la locura?");
+    case "Bibliotecario":
+    case "Asistente":
+        console.log("¡Hola personal de la biblioteca! ¿Preparados para organizar?");
         break;
-    case "Summer":
-        console.log("¡Hola Summer! ¿Lista para la acción?");
+    case "Lector":
+        console.log("¡Hola lector! ¿Listo para buscar un libro?");
         break;
     default:
-        console.log("No reconocemos a este personaje, ¡ten cuidado!");
+        console.log("No reconocemos a este usuario, ¡ten cuidado!");
 }
 
 let energia = 50;
 switch (true) {
     case (energia > 0 && energia <= 25):
-        console.log("Tienes poca energía para la aventura.");
+        console.log("Tienes pocos libros disponibles.");
         break;
     case (energia > 25 && energia <= 50):
-        console.log("Tienes algo de energía para la aventura.");
+        console.log("Tienes una cantidad moderada de libros.");
         break;
     case (energia > 50 && energia <= 75):
-        console.log("Tienes suficiente energía para la aventura.");
+        console.log("Tienes suficientes libros en el inventario.");
         break;
     case (energia > 75  && energia <= 100):
-        console.log("Tu energía es alta, ¡ten cuidado!");
+        console.log("El inventario es alto, ¡ten cuidado!");
         break;
     default:
-        console.log("No tienes suficiente energía para continuar la aventura.");
+        console.log("No hay suficientes libros para continuar el préstamo.");
 }
 
-console.log("Calculadora");
+console.log("Calculadora de Biblioteca");
 let numero1 = 10;
 let numero2 = 5;
 let operacion = "multiplicacion";
