@@ -69,13 +69,11 @@ function misionesExitosas(misiones) {
     }
     return misionesExitosas;
 }
-let listadoMisiones = [
-    [10, 20, 15],       // Total: 45 (No exitosa)
-    [30, 25, 10],       // Total: 65 (Exitosa)
-    [50, 10],           // Total: 60 (Exitosa)
-    [5, 5, 5]           // Total: 15 (No exitosa)
-];
+let listadoMisiones = [[10, 20, 15], [30, 25, 10], [50, 10], [5, 5, 5]];
 
 let totalExitosas = misionesExitosas(listadoMisiones);
 
 console.log("Cantidad de misiones exitosas: " + totalExitosas);
+
+console.log("---------------------");
+

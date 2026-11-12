@@ -87,3 +87,4 @@ while (indice < cristales.length) {
     }
 }
 console.log("Energía total acumulado:" + energiaTotal);
+
