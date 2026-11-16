@@ -19,6 +19,8 @@ console.log("Personajes", personajes);
 console.log("ELiminar un elemento del arreglo");
 
 personajes.pop() /*Elimina último elemento*/
+personajes.pop(3) /*Elimina el elmento especifico*/
+
 console.log("Personajes", personajes);
 
 
