@@ -1,6 +1,5 @@
 console.log("Control de Biblioteca: funciones en JavaScript");
 
-// 1. Función sin parámetros
 function abrirBiblioteca() {
     console.log("Biblioteca abierta: Bienvenidos a la sala de lectura.");
 }
@@ -9,7 +8,6 @@ abrirBiblioteca();
 
 console.log("----------");
 
-// 2. Función con un parámetro
 function registrarLector(nombre) {
     console.log("El lector " + nombre + " ha ingresado a la biblioteca.");
 }
@@ -19,7 +17,6 @@ registrarLector("Carlos");
 
 console.log("----------");
 
-// 3. Función con múltiples parámetros, condicional y retorno (Límite máximo de préstamos)
 function prestarLibros(librosActuales, nuevosPrestamos) {
     let totalLibros = librosActuales + nuevosPrestamos;
     if (totalLibros > 10) {
@@ -35,7 +32,6 @@ librosPrestados = prestarLibros(librosPrestados, 4);
 
 console.log("----------");
 
-// 4. Función con operaciones matemáticas y retorno (Descuento en multas por retraso)
 console.log("Calcular descuentos en multas de biblioteca");
 function calcularMultaConDescuento(multa, descuento) {
     let multaFinal = multa - (multa * (descuento / 100));
@@ -49,7 +45,6 @@ console.log("Multa Original: $" + multaOriginal + " | Multa con descuento: $" + 
 
 console.log("--------------------------");
 
-// 5. Función que recorre un arreglo (Total de páginas o libros leídos en la semana)
 function calcularTotalLibros(prestamosDiarios) {
     let total = 0;
 
@@ -65,7 +60,6 @@ console.log("Total de libros prestados en el periodo: " + totalLibrosPrestados);
 
 console.log("--------------------------");
 
-// 6. Función que reutiliza otra función y evalúa arreglos anidados (Semanas con alta demanda)
 function semanasAltaDemanda(registroMensual) {
     let semanasExitosas = 0;
     for (let i = 0; i < registroMensual.length; i++) {

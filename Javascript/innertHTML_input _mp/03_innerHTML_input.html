@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección y Captura DOM</title>
+    <script src="03_innerHTML_input_mp.js" defer></script>
+</head>
+<body>
+    <main>
+        <section aria-labelledby="titulo-dom">
+            <h1 id="titulo-dom">Contenidos de Elementos DOM</h1>
+            <p id="mensaje">Mensaje del más allá</p>
+            <p id="saludo">Saludo minimalista</p>
+            <div id="ficha">Ficha del Tripulante</div>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="titulo-inputs">
+            <h2 id="titulo-inputs">Capturar Valores desde Inputs</h2>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" placeholder="Escriba su nombre">
+            <button id="registrar" type="button">Registrar</button>
+            
+            <!-- Elemento donde el JS inyectará el resultado -->
+            <p id="saludar" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>

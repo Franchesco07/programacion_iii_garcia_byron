@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Biblioteca - Atributos</title>
+    <!-- Mantenemos la referencia a tu script con defer -->
+    <script src="05_atributos_mp.js" defer></script>
+</head>
+<body>
+    <!-- SECCIÓN 1: Modificar atributos estándar y personalizados (data-*) -->
+    <h1>Gestión de Catálogo de Libros</h1>
+    
+    <!-- La imagen representa la portada del libro seleccionado -->
+    <!-- data-categoria reemplaza a data-dimension para usar dataset en JS -->
+    <img id="portadaLibro"
+        src="don_quijote.jpeg"
+        title="Don Quijote de la Mancha"
+        alt="Portada del libro"
+        width="200"
+        data-categoria="Clásico"
+    >
+
+    <!-- Botones para interactuar con los atributos de la imagen -->
+    <button id="cambiarLibro">Cambiar Libro</button>
+    <button id="verCategoria">Ver Categoría</button>
+    
+    <!-- Etiqueta donde JS imprimirá el valor del atributo data-categoria -->
+    <h2 id="categoria">Categoría: </h2>
+
+    <hr>
+
+    <!-- SECCIÓN 2: Modificar clases o estilos CSS dinámicamente -->
+    <h1>Control de Préstamos</h1>
+    
+    <!-- Contenedor cuyo estilo (ej. color verde/rojo) cambiará con JS -->
+    <div id="estadoPrestamo">Estado: Disponible</div>
+    <button id="cambiarEstado">Prestar / Devolver Libro</button>
+</body>
+</html>
