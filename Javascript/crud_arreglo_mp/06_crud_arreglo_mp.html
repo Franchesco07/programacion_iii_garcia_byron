@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <script src="06_crud_arreglo_mp.js" defer></script>
+</head>
+
+<body>
+    <h1>Registro</h1>
+    <h2 id="tituloFormulario">Registro de libro</h2>
+    <form id="formulario">
+        <input type="text" id="libro">
+        <select id="autor">
+            <option value="Gabriel García M.">Gabriel García MArquez</option>
+            <option value="George Orwell">George Orwell</option>
+            <option value="Patrick Rothfuss">Patrick Rothfuss</option>
+        </select>
+        <select id="año">
+            <option value="1967">1967</option>
+            <option value="1949">1949</option>
+            <option value="2007">2007</option>
+        </select>
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar">Cancelar</button>
+    </form>
+
+    <h2>Libros Registrados</h2>
+    <h2 id="cantidad">Cantidad</h2>
+    <div id="contenedor"></div>
+
+</body>
+
+</html>
